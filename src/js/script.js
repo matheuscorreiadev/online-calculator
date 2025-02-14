@@ -15,7 +15,7 @@ function deleteLast() {
 
 function calculate() {
     try {
-        // Usamos uma abordagem de substituir os operadores por funções matemáticas
+        // Usei uma abordagem de substituir os operadores por funções matemáticas
         let expression = display.value;
         expression = expression.replace(/x/g, '*').replace(/÷/g, '/');  // Substitui para os operadores padrão
         let result = evaluateExpression(expression);
@@ -26,7 +26,7 @@ function calculate() {
 }
 
 function evaluateExpression(expression) {
-    // Aqui estamos fazendo uma implementação manual de cálculos
+    // Aqui fiz uma implementação manual de cálculos
     const operators = ['+', '-', '*', '/'];
 
     let numbers = expression.split(/[\+\-\*\/]/).map(num => parseFloat(num));
